@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Animacion from "../components/animacion";
+import Animacion from "../components/Animacion";
 
 // Importación de imágenes
 import imagenFeliz from "../assets/img/happy.gif";
