@@ -1,0 +1,30 @@
+.background {
+  background-image: url(../assets/img/banner1.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-attachment: scroll; /* Cambia a scroll para un mejor comportamiento en móviles */
+}
+
+.background-b {
+  background-image: url(../assets/img/banner1.png);
+  background-size: cover; /* La imagen cubre todo */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* Media Queries para ajustar la imagen en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .background {
+    background-size: 100% 300px; /* La imagen se ajusta al contenedor sin recortarse */
+    background-position: center top; /* Ajusta la posición */
+    background-attachment: fixed; /* Evita problemas de rendimiento en móviles */
+  }
+
+  .background-b {
+    background-size: contain;
+    background-position: center top;
+    background-attachment: scroll;
+  }
+}
